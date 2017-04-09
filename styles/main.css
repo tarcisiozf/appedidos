@@ -1,0 +1,76 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+}
+
+body, html {
+	width: 100%;
+	min-height: 100% !important;
+}
+
+.menu {
+	width: 100%;
+	height: 60px;
+	background-color: #AC0019;
+	position: fixed;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+			box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.menu .name {
+	color: #FFF;
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	margin-left: 20px;
+}
+
+.menu .icon {
+	width: 60px;
+	height: 60px;
+	float: right;
+	cursor: pointer;
+	transition: 0.5s;
+	will-change: background-color;
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.menu .icon:hover {
+	background-color: #d22740;
+}
+
+.buy {
+	width: 50px;
+	height: 50px;
+	background-color: #AC0019;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 9999;
+	text-align: center;
+	line-height: 50px;
+	color: #FFF;
+	font-size: 28px;
+	left: 100%;
+	top: 100%;
+	display: none;
+	cursor: pointer;
+	transform: translate(-80px, -80px);
+	-webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+			box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+}

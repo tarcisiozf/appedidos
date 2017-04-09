@@ -1,0 +1,32 @@
+.token {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+}
+
+.token .qrcode {
+	width: 100%;
+	max-width: 250px;
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 30px;
+}
+
+.token .text {
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.token .header {
+	font-size: 28px;
+	color: #AC0019;
+}
+
+.token .content {
+	font-size: 22px;
+	color: #252525;
+}

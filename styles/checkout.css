@@ -1,0 +1,83 @@
+.checkout {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+}
+
+.checkout .items {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.checkout .items .product {
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.checkout .items .product .text {
+	line-height: 60px;
+}
+
+.checkout .items .product .photo {
+	float: left;
+	width: 58px;
+	border: 1px solid #808080;
+	border-radius: 50%;
+}
+
+.checkout .items .product .name {
+	float: left;
+	margin-left: 15px;
+	font-size: 22px;
+}
+
+.checkout .items .product .quantity {
+	float: right;
+}
+
+.checkout .items .product .quantity .action {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 15px 0px;
+	float: left;
+	color: #FFF;
+	background-color: #AC0019;
+	font-size: 22px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.checkout .items .product .quantity .number {
+	float: left;
+	margin: 0px 10px;
+	font-size: 22px;
+}
+
+.checkout .total {
+	float: right;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+.checkout .payment {
+	width: 100%;
+	max-width: 300px;
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 30px;
+}
+
+.checkout .pay {
+	float: right;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #AC0019;
+	color: #FFF;
+	cursor: pointer;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cardápio</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/pages.css">
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
+	<link rel="stylesheet" type="text/css" href="styles/store.css">
+	<link rel="stylesheet" type="text/css" href="styles/reviews.css">
+	<link rel="stylesheet" type="text/css" href="styles/token.css">
+	<link rel="stylesheet" type="text/css" href="styles/checkout.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="menu">
+
+		<div class="name">
+			<b>APP</b>EDIDOS
+		</div>
+
+		<div class="icon" id="btn_home">
+			<i class="fa fa-home"></i>
+		</div>
+
+		<div class="icon" id="btn_cart">
+			<i class="fa fa-shopping-cart"></i>
+		</div>
+
+		<div class="icon" id="btn_ticket">
+			<i class="fa fa-ticket"></i>
+		</div>
+
+	</div>
+
+	<div class="buy" id="btn_buy">
+		<i class="fa fa-usd"></i>
+	</div>
+
+	<div class="container">
+
+		<div class="page home active" data-section="home">
+
+			<div class="location">
+				<i class="fa fa-map-marker"></i>
+				<b>Você está em:</b> <br/> Shopping Curitiba
+			</div>
+
+			<div class="stores">
+				
+				<div class="store" style="background-image: url('images/covers/mcdonalds.jpg');">
+					<div class="info">
+						<div class="review">
+							★★★★☆
+						</div>
+						<div class="name">
+							<b>McDonald's</b>
+						</div>
+					</div>
+				</div>
+
+				<div class="store" style="background-image: url('images/covers/burguer_king.jpg');">
+					<div class="info">
+						<div class="review">
+							★★★★☆
+						</div>
+						<div class="name">
+							<b>Burguer King</b>
+						</div>
+					</div>
+				</div>
+
+				<div class="store" style="background-image: url('images/covers/pizza_hut.jpg');">
+					<div class="info">
+						<div class="review">
+							★★★★☆
+						</div>
+						<div class="name">
+							<b>Pizza Hut</b>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="page store" data-section="store">
+			
+			<div class="head">
+				<div class="cover" style="background-image: url('images/covers/mcdonalds.jpg');"></div>
+				<img class="logo" src="images/logos/mcdonalds.gif">
+				<div class="name">McDonald's</div>
+			</div>
+
+			<div class="body">
+
+				<div class="review" id="btn_review">
+					<div class="score">
+						★★★★☆
+					</div>
+					<div class="comment">
+						TODOS OS COMENTÁRIOS
+					</div>
+				</div>
+
+				<div class="products"></div>
+
+			</div>
+
+		</div>
+
+		<div class="page checkout" data-section="checkout">
+			
+			<div class="items"></div>
+
+			<div class="total">
+				Valor total: R$ <span id="total">0</span>
+			</div>
+
+			<img class="payment" src="images/payments.jpg">
+
+			<div class="pay" id="btn_pay">
+				FINALIZAR COMPRA
+			</div>
+
+		</div>
+
+		<div class="page reviews" data-section="reviews">
+
+			<div class="comment">
+
+				<div class="left">
+					<img class="profile-photo" src="images/profile/ana.jpg">
+				</div>
+
+				<div class="right">
+					<div class="score">★★★★☆</div>
+					<div class="date">21/12/2012</div>
+					<div class="content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros velit, accumsan in ipsum ut, pulvinar suscipit massa. Nunc lacus lorem, consequat ac finibus eu, convallis nec felis.
+					</div>
+				</div>
+
+			</div>
+
+			<div class="comment">
+
+				<div class="left">
+					<img class="profile-photo" src="images/profile/joao.jpg">
+				</div>
+
+				<div class="right">
+					<div class="score">★★★★☆</div>
+					<div class="date">21/12/2012</div>
+					<div class="content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros velit, accumsan in ipsum ut, pulvinar suscipit massa.
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="page token" data-section="token">
+			
+			<img class="qrcode" src="images/qrcode.jpg" />
+
+			<div class="text header"> 
+				<b>PEDIDO:</b>
+			</div> 
+
+			<div class="text content">
+				A23
+			</div> 
+
+			<div class="text header"> 
+				<b>PREVISÃO:</b>
+			</div> 
+
+			<div class="text content">
+				9 minutos
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+
+		const scripts = [
+			'pages',
+			'products',
+			'main'
+		];
+
+		window.onload = function () {
+			
+			scripts.forEach(function(name) {
+
+				let script = document.createElement('script');
+					script.setAttribute('type', 'text/javascript');
+					script.setAttribute('defer', '');
+					script.setAttribute('src', 'scripts/' + name + '.js?noCache=' + Date.now() );
+
+
+				document.body.appendChild(script);
+
+			});
+
+		}
+
+	</script>
+</body>
+</html>
