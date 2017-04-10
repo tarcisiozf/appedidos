@@ -1,3 +1,4 @@
+
 const pageSlider = new PageSlider();
 const products = new Products();
 
@@ -29,3 +30,4 @@ for ( let id in buttons ) {
 		pageSlider.moveTo(section);
 	});
 }
+

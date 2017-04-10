@@ -1,3 +1,5 @@
+
+
 class PageSlider {
 
 	constructor() {
@@ -60,3 +62,4 @@ class PageSlider {
 	}
 
 }
+

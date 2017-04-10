@@ -1,15 +1,17 @@
+
+
 class Products {
 
 	constructor() {
 
-		this.renderCheckoutProduct = this.renderCheckoutProduct.bind(this);
-		this.renderStoreProduct = this.renderStoreProduct.bind(this);
-		this.selectProduct = this.selectProduct.bind(this);
-		this.updateQtd = this.updateQtd.bind(this);
+		this.updateQtd 				= this.updateQtd.bind(this);
+		this.selectProduct 			= this.selectProduct.bind(this);
+		this.renderStoreProduct 	= this.renderStoreProduct.bind(this);
+		this.renderCheckoutProduct 	= this.renderCheckoutProduct.bind(this);
 
+		this.totalCost 			= document.querySelector('#total');
+		this.items_container 	= document.querySelector('.items');
 		this.products_container = document.querySelector('.products');
-		this.items_container = document.querySelector('.items');
-		this.totalCost = document.querySelector('#total');
 
 		this.parser = new DOMParser();
 
@@ -65,6 +67,7 @@ class Products {
 			}
 		];
 
+		// I just need to render them once
 		this.products.forEach(this.renderStoreProduct);
 
 		this.renderCheckout();
@@ -186,3 +189,4 @@ class Products {
 	}
 
 }
+
